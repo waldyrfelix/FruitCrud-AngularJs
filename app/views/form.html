@@ -1,0 +1,14 @@
+﻿<h2>{{title}}</h2>
+<form name="formFruit" role="form" class="form-horizontal">
+    <div class="form-group">
+        <div class="col-md-4">
+            <label for="nome" class="control-label">Nome</label>
+            <input type="text" name="nome" id="nome" class="form-control" ng-model="fruit" required />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            <button ng-click="save()" ng-disabled="formFruit.$invalid">Salvar</button>&nbsp;&nbsp;<a href="#/">Cancelar</a>
+        </div>
+    </div>
+</form>
